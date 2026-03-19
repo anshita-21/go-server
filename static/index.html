@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Server</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem;
+        }
+        .badge {
+            display: inline-block;
+            background: #22d3ee22;
+            color: #22d3ee;
+            border: 1px solid #22d3ee44;
+            padding: 0.3rem 1rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #22d3ee, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        a {
+            padding: 0.7rem 1.8rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #22d3ee, #818cf8);
+            color: #0f172a;
+        }
+        .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+        .btn-secondary {
+            border: 1px solid #334155;
+            color: #94a3b8;
+        }
+        .btn-secondary:hover { border-color: #22d3ee; color: #22d3ee; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="badge">GO SERVER</div>
+        <h1>Welcome</h1>
+        <p>A lightweight Go HTTP server serving static files and handling form submissions.</p>
+        <div class="links">
+            <a href="/form.html" class="btn-primary">Open Form</a>
+            <a href="/hello" class="btn-secondary">Say Hello</a>
+        </div>
+    </div>
+</body>
+</html>
